@@ -6,13 +6,13 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+@SuppressWarnings("WeakerAccess")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class Message {
+public class User {
 
-    private Long messageId;
-    private User user;
-    private String text;
+    private long userId;
+    private String name;
     private LocalDateTime created;
 }
